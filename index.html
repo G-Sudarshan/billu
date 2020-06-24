@@ -20,7 +20,16 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
-   
+    .footer {
+  height: 50px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:;
+  color:;
+  text-align: center;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -30,14 +39,8 @@ html, body {
   min-height: 100%;
   margin: 0 auto -50px;
 }
-.footer{
-  position:absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:;
-  color:;
-  text-align: center;
+
+.push {
   height: 50px;
 }
 
@@ -46,10 +49,12 @@ html, body {
     <title>Billu - The accountant</title>
   </head>
   <body>
+   
     <nav class="navbar navbar-dark bg-dark">
       <span class="navbar-brand mb-0 h1">Billu - Your personal accountant</span>
       <span class="navbar-brand mb-0 h1" id="headingTotal">Total: ₹ 0</span>
     </nav>
+    <div class="content">
     <div class="container-fluid bg-light" style="min-height: 100vh;">
       <div class="container">
         <div class="jumbotron mt-4">
@@ -95,6 +100,10 @@ html, body {
           <ul class="list-group" id="expenseTable" >
             
             </ul>
+        </div>
+        </div>
+        <div class="push">
+
         </div>
         
         <footer class="py-3 footer">
