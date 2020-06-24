@@ -34,13 +34,26 @@
 			width: 100%;
 			height: auto;
 		}
+
+    footer{
+ position: relative;
+}
+html,body {
+    height: 100%; /* Needed for container's min-height  */  
+}
+
+.container{
+    min-height:100%;
+    margin-bottom: -40px; /* Put negative height of the footer here */
+    padding-bottom: 40px; /* Put height of the footer here. Needed for higher than screen height pages */
+}
 </style>
     <title>Billu - The accountant</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <span class="navbar-brand mb-0 h1">Billu - Your personal accountant</span>
-      <span class="navbar-brand mb-0 h1" id="headingTotal">Total: 0</span>
+      <span class="navbar-brand mb-0 h1" id="headingTotal">Total: ₹ 0</span>
     </nav>
     <div class="container-fluid bg-light" style="min-height: 100vh;">
       <div class="container">
@@ -145,7 +158,7 @@
       totalExpense = totalExpense + expense;
 
 				// set the heading element to totalExpense
-				const someText = `Total: ${totalExpense}`;
+				const someText = `Total: ₹ ${totalExpense}`;
 				headingEl.textContent = someText;
 
         allExpenses.push(expenseItem);
@@ -191,7 +204,7 @@
         }
         
 				// set the heading element to totalExpense
-				const someText = `Total: ${totalExpense}`;
+				const someText = `Total: ₹ ${totalExpense}`;
 				headingEl.textContent = someText;
       }
 
@@ -208,7 +221,7 @@
               </div>
               <div>
                 <span class="px-5">
-                  ${amount}
+                  ₹ ${amount}
                 </span>
                 <button type="button" class="btn btn-outline-danger btn-sm"
                 onclick="deleteItem(${moment.valueOf()})" >
