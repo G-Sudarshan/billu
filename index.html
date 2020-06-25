@@ -14,7 +14,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
-    .abc {
+    .footer {
   
   position:fixed;
   left: 0;
@@ -25,6 +25,15 @@
   text-align: center;
 }
 
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
 
    
 </style>
@@ -32,12 +41,13 @@
     
   </head>
   <body>
-    
+   
     <nav class="navbar navbar-dark bg-dark">
       <span class="navbar-brand mb-0 h1">Billu - Your personal accountant</span>
       <span class="navbar-brand mb-0 h1" id="headingTotal">Total: ₹ 0</span>
     </nav>
     
+    <div class="wrapper" >
     <div class="container-fluid bg-light" style="min-height: 100vh;">
       <div class="container">
         <div class="jumbotron mt-4">
@@ -85,25 +95,23 @@
             </ul>
         </div>
         </div>
+        </div>
         
-        <center>
-        <nav class="abc navbar navbar-inverse navbar-fixed-bottom">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              
+       
+        
+        <footer class="py-3 footer">
+          <div class="container text-center">
             G Sudarshan
             &nbsp;
             
             <a target="_blank" href="https://github.com/g-sudarshan" ><i class="fa fa-github	" aria-hidden="true"></i> &nbsp; </a>
             <a target="_blank" href="https://in.linkedin.com/in/sudarshan-gawale-a691b1181" ><i class="fa fa-linkedin" aria-hidden="true"></i> &nbsp; </a>
             <a target="_blank" href="https://www.instagram.com/g.sudarshan_11/" ><i class="fa fa-instagram" aria-hidden="true"></i> &nbsp; </a>
-         
-            </div>
+            </button>
+
             </div>
             
-          </nav>
-        </center>
-        
+            </footer>
 
      
 
